@@ -46,6 +46,6 @@ function SelectionSort(list) {
 }
 ```
 
-### ..\* The outer loop is the index of the value assumed to be the minimum
+### \* The outer loop is the index of the value assumed to be the minimum
 
-### ..\* The inner loop is the index of the value to be compared
+### \* The inner loop is the index of the value to be compared

@@ -22,7 +22,7 @@ function BubbleSort(list) {
 }
 ```
 
-### ..\*Compares each value to its adjacent value and swaps if necessary.
+### \*Compares each value to its adjacent value and swaps if necessary.
 
 ## Selection Sort
 

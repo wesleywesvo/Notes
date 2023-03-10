@@ -1,20 +1,6 @@
-# Useful methods
-
-## Array.prototype.join()
-
-```javascript
-const a = ['wind', 'water', 'fire'];
-a.join(); // 'wind,water,fire'
-a.join(''); // 'windwaterfire'
-```
-
-### \* Parameter: specifies a string to separate each array entry
-
-### \* Return: a string with all array elements joined
-
 # Function Syntax
 
-## Traditional way
+### Traditional way
 
 ```javascript
 function myFunc (argument1, argument2, ...) {
@@ -23,7 +9,7 @@ function myFunc (argument1, argument2, ...) {
 }
 ```
 
-## Arrow Notation
+### Arrow Notation
 
 ```javascript
 const myFunc = (argument1, argument2, ...) => {
@@ -37,9 +23,9 @@ const myFunc = (argument1) => {
 }
 ```
 
-## Functions with Unknown Number of Arguments
+### Functions with Unknown Number of Arguments
 
-### \* Method overloading (Java) does not exist in JS
+#### \* Method overloading (Java) does not exist in JS
 
 ```javascript
 function myFunc(x, y) {
@@ -50,7 +36,7 @@ function myFunc(x, y) {
 }
 ```
 
-### \* Parameters can be assigned a default value if no argument is passed
+#### \* Parameters can be assigned a default value if no argument is passed
 
 ```javascript
 function myFunc(x, y = 10) {

@@ -42,3 +42,76 @@ value[x] and value.x are not the same
 value.x fetches the value from the property named 'x'
 value[x] evaluates 'x' in [] to get the property name
 ```
+
+## Assigning properties
+
+### Standard
+
+```javascript
+let wheelTotal = 4;
+let color = 'red';
+let bike = {
+	wheelTotal: 4,
+	color: 'red',
+	beginPedaling: function () {
+		console.log(`pedaling!`);
+	},
+};
+```
+
+### Shorthand
+
+#### - Useful for when the variable name is the desired property name
+
+```javascript
+let wheelTotal = 4;
+let color = 'red';
+let bike = {
+	wheelTotal,
+	color,
+	beginPedaling() {
+		console.log(`pedaling!`);
+	},
+};
+```
+
+### Example of creating an object using functions
+
+```javascript
+function createCalculator() {
+	return {
+		sum: 0,
+		value() {
+			return this.sum;
+		},
+		add(num) {
+			this.sum += num;
+		},
+		subtract(num) {
+			this.sum -= num;
+		},
+		clear() {
+			this.sum = 0;
+		},
+	};
+}
+
+const createCalculator = () => ({
+	sum: 0,
+	value() {
+		return this.sum;
+	},
+	add(num) {
+		this.sum += num;
+	},
+	subtract(num) {
+		this.sum -= num;
+	},
+	clear() {
+		this.sum = 0;
+	},
+});
+
+let calc1 = createCalculator();
+let calc2 = createCalculator();
+```

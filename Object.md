@@ -77,6 +77,8 @@ let bike = {
 
 ### Example of creating an object using functions
 
+#### - Using the `function` keyword requires an explicit return statement
+
 ```javascript
 function createCalculator() {
 	return {

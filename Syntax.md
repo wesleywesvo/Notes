@@ -78,3 +78,21 @@ const copyOfObj = Object.assign({}, obj);
 ```
 
 #### \* If we compared the two objects, it would be false because Object.assign() creates a new reference in memory
+
+#### \* Object.assign() only copies primitive values, does not copy a property if the property happens to be an object
+
+```javascript
+const objToClone = {
+	one: 'one',
+	two: 'two',
+	three: {
+		a: 'a',
+		b: 'b',
+		c: 'c',
+	},
+};
+
+const clone = Object.assign({}, objToClone);
+```
+
+#### \* Property 'three' is an object and is not being copied, but being referenced now

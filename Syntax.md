@@ -70,7 +70,7 @@ setPropsOnObj(object);
 
 #### \* When objects are being compared their reference in memory is being compared
 
-### \* Object.assign(target, source, ..., source)
+## \* Object.assign(target, source, ..., source)
 
 ```javascript
 const obj = { location: 'NYC', temperature: 75 };

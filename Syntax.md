@@ -1,4 +1,4 @@
-# Function Syntax
+# General Function Syntax
 
 ### Traditional way
 
@@ -61,4 +61,20 @@ const setPropsOnObj = (obj) => {
 	obj.y = 8;
 	obj.onePlus = (num) => (num += 1);
 };
+
+object = {};
+setPropsOnObj(object);
 ```
+
+# General Object Syntax/Methods
+
+#### \* When objects are being compared their reference in memory is being compared
+
+### \* Object.assign(target, source, ..., source)
+
+```javascript
+const obj = { location: 'NYC', temperature: 75 };
+const copyOfObj = Object.assign({}, obj);
+```
+
+#### \* If we compared the two objects, it would be false because Object.assign() creates a new reference in memory

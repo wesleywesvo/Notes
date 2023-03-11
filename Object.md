@@ -117,3 +117,43 @@ const createCalculator = () => ({
 let calc1 = createCalculator();
 let calc2 = createCalculator();
 ```
+
+## Looping across Objects
+
+### Object.prototype.hasOwnProperty(prop)
+
+#### - Parameter: 'prop' is a string of the property to test
+
+#### - Return: boolean value
+
+```javascript
+const obj = {
+	height: 74,
+	width: 12,
+};
+for (let prop in obj) {
+	if (obj.hasOwnProperty(prop)) {
+		console.log(prop);
+	}
+}
+/* OUTPUT
+	height
+	width
+*/
+```
+
+### Object.keys(obj)
+
+#### - Parameter: 'obj' and object
+
+#### - Return: an array of strings representing the object's own enumerable properties (does not check internal prototype)
+
+```javascript
+const obj = {
+	height: 74,
+	width: 12,
+};
+for (var prop of Object.keys(obj)) {
+	console.log(prop);
+}
+```

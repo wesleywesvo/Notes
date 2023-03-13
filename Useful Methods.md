@@ -36,3 +36,21 @@ const arr2 = ['d', 'e'];
 const aToE = [...arr1, ...arr2];
 console.log(aToE); // ['a', 'b', 'c', 'd', 'e'];
 ```
+
+## Unknown number of arguments passed to functions
+
+### - 'arguments' - array=like object inside functions that contains values of the arguments passed to that function
+
+```javascript
+function myFunc() {
+    //method 1 - using a loop
+    let args = [];
+    for (let i = 0; i < arguments.length; i++) {
+        args.push(arguments[i]);        //store arguments into an array
+    }
+    //method 2 - Using Array.from()
+    let args = Array.from(arguments);   //store arguments into an array
+}
+
+myFunc(arg1, arg2, arg3, ...);
+```

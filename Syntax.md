@@ -65,3 +65,25 @@ const setPropsOnObj = (obj) => {
 object = {};
 setPropsOnObj(object);
 ```
+
+# Factory Functions + Methods in Prototype Chain
+
+```javascript
+const puppyProto = {
+    bark() {
+      console.log('Ruff, Ruff');
+    },
+    sleep() {
+      console.log('zzzZZZZZzzzz');
+    }
+};
+
+function puppyFactory(name, breed) {
+	const puppy = Object.create(puppyProto);		//create puppy object with methods in Prototype chain (defined above)
+	puppy.name = name;
+	puppy.breed = breed;
+	return puppy;
+}
+
+const zach = puppyFactory('zach, 'beagle');		//create a puppy object
+```

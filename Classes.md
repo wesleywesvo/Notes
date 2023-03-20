@@ -98,7 +98,7 @@ const user = new GithubAdminUser('admin');
 console.dir(user);
 
 ![Image](
-	'D:/Program%20Files%20(x86)/Visual%20Studio%20Code/Notes/Images/Subclass%20visual.png'
+	D:/Program%20Files%20(x86)/Visual%20Studio%20Code/Notes/Images/Subclass%20visual.png
 );
 ```
 

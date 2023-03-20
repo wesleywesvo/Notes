@@ -89,8 +89,12 @@ GithubAdminUser.prototype = Object.create(GithubUser.prototype);
 GithubAdminUser.prototype.constructor = GithubAdminUser; //constructor
 
 //AdminUser's prototype methods
-GithubAdminUser.prototype.updatePermissions = function () {};
-GithubAdminUser.prototype.deleteUser = function () {};
+GithubAdminUser.prototype.updatePermissions = function () {
+	//do and return stuff
+};
+GithubAdminUser.prototype.deleteUser = function () {
+	//do and return stuff
+};
 
 const user = new GithubAdminUser('admin');
 // user prototype methods == `updatePermissions(), deleteUser()`
@@ -100,4 +104,42 @@ console.dir(user);
 
 ![Image](https://github.com/wesleywesvo/Notes/blob/main/Images/Subclass%20visual.png)
 
-## Using `class`, `extends`, and `super` keyword
+## Refactor using `class`, `extends`, and `super` keyword
+
+#### super(args): The arguments are the parent's constructor parameters
+
+```javascript
+class GithubUser {
+	constructor(username, billingPlan = 'free') {
+		this.username = username;
+		this.billingPlan = billingPlan;
+		this.repositories = [];
+	}
+
+	//prototype methods
+	//traditional `function` keyword --> needs ';' at end of line
+	editBillingPlan = function (newPlan) {
+		this.billingPlan = newPlan;
+	};
+	//shorthand function syntax --> does not need ';'
+	editBillingPlan(newPlan) {
+		this.billingPlan = newPlan;
+	}
+}
+
+class GithubAdminUser extends GithubUser {
+	constructor(username) {
+		//must call super() before using `this` - check documentation
+		super(username, 'paid');
+		this.adminAccess = true;
+	}
+	updatePermissions() {
+		//do and return stuff
+	}
+	deleteUser() {
+		//do and return stuff
+	}
+}
+
+const user = new GithubAdminUser('admin');
+```

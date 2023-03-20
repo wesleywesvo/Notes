@@ -97,7 +97,9 @@ const user = new GithubAdminUser('admin');
 // user internal prototype method == GithubUser methods == `editBillingPlan()`
 console.dir(user);
 
-![Image]('./Images/Subclass%20visual.png');
+![Image](
+	'D:/Program Files (x86)/Visual Studio Code/Notes/Images/Subclass visual.png'
+);
 ```
 
 ## Using `class`, `extends`, and `super` keyword

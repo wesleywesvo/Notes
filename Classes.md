@@ -98,6 +98,6 @@ const user = new GithubAdminUser('admin');
 console.dir(user);
 ```
 
-![Image](https://github.com/wesleywesvo/Notes/blob/main/Images/Subclass%20visual.png);
+![Image](https://github.com/wesleywesvo/Notes/blob/main/Images/Subclass%20visual.png)
 
 ## Using `class`, `extends`, and `super` keyword

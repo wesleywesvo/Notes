@@ -143,3 +143,87 @@ class GithubAdminUser extends GithubUser {
 
 const user = new GithubAdminUser('admin');
 ```
+
+## Can use (... args) and `this` for duplicate code
+
+### The duplicate code is `haveBaby()` method - only argument is different
+
+```javascript
+class Mammal {
+	constructor(name) {
+		this.name = name;
+		this.offspring = [];
+	}
+
+	sayHello() {
+		return `My name is ${this.name}, I'm a ${this.constructor.name}`;
+	}
+
+	haveBaby() {
+		let baby = new Mammal(`Baby ${this.name}`);
+		this.offspring.push(baby);
+		return baby;
+	}
+}
+
+//------------------------------------------//
+
+class Cat extends Mammal {
+	constructor(name, color) {
+		super(name);
+		this.color = color;
+	}
+
+	meow() {
+		return `meow`;
+	}
+
+	haveBaby(color) {
+		let baby = new Cat(`Baby ${this.name}`, color);
+		this.offspring.push(baby);
+		return baby;
+	}
+}
+
+//------------------------------------------//
+
+class Dog extends Mammal {
+	constructor(name, breed) {
+		super(name);
+		this.breed = breed;
+	}
+
+	bark() {
+		return `RUFF RUFF`;
+	}
+
+	haveBaby(breed) {
+		let baby = new Dog(`Baby ${this.name}`, breed);
+		this.offspring.push(baby);
+		return baby;
+	}
+}
+```
+
+### Modify the `haveBaby()` method from Mammal class to accept unknown number of arguments with `(...args)` and `this.constructor`
+
+### **Recall how `this` is referenced from Github example**
+
+```javascript
+class Mammal {
+	constructor(name) {
+		this.name = name;
+		this.offspring = [];
+	}
+
+	sayHello() {
+		return `My name is ${this.name}, I'm a ${this.constructor.name}`;
+	}
+
+	haveBaby(...args) {
+		let baby = new this.constructor(`Baby ${this.name}`);
+		this.offspring.push(baby);
+		return baby;
+	}
+}
+```

@@ -106,6 +106,8 @@ console.log(test()); //counter = 2; "already called"
 
 ### Reading a variable will climb up the scope chain if undefined
 
+## Example 1:
+
 ```javascript
 var a = 1;
 
@@ -134,3 +136,18 @@ f3();
 ### The value of `a` is the variable declared outside of `f1` and `f3` - the global scope which is `1` in this case
 
 ### The value of `b` is the variable declared in the local scope of `f1` and in this case it is `2`.
+
+## Example 2:
+
+```javascript
+let result = [];
+for (let i = 0; i < 5; i++) {
+	result[i] = function () {
+		return i;
+	};
+}
+console.log(result[0]()); //output: '0'
+console.log(result[1]()); //output: '1'
+```
+
+### The array holds a function that returns the ith iteration when executed

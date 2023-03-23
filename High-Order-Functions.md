@@ -1,3 +1,23 @@
+# High-Order Functions
+
+### Functions that return functions
+
+## Small Example
+
+```javascript
+const stranger = () => {
+	// things is the value the stranger function returns
+	return function things() {
+		return 'stranger things';
+	};
+};
+
+stranger(); //outputs the function itself:
+//things() {return "stranger things";}
+
+stranger()(); //outputs 'stranger things'
+```
+
 ### Output: 'Called Value and Other Value'
 
 ```javascript

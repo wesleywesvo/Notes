@@ -30,3 +30,31 @@
 ### Supports nested inline elements
 
 ### Opening and closing `<p> </p>` tags
+
+## Block-Level Elements
+
+### Take up the full width of a document and "blocks out" elements to its left and right
+
+### Common block elements:
+
+##### \* Headers `<h#> </h#>`
+
+##### \* Forms`<form>`
+
+##### \* Divisions `<div>`
+
+##### \* List and list items `<ol>, <ul, <li>`
+
+##### \* Paragraphs <p>
+
+## Inline Elements
+
+### Elements stay on the same line and do not consume available width
+
+### Common inline elements:
+
+##### \* Spans `<span>`
+
+##### \* Images `<img>`
+
+##### \* Anchors (links) `<a>`

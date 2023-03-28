@@ -2,13 +2,13 @@
 
 ## Header Syntax
 
-### Used to make your text stand out in a document ie: titles
+#### Used to make your text stand out in a document ie: titles
 
-### Help search engines to index and determine contents of a page
+#### Help search engines to index and determine contents of a page
 
-### Opening and closing `<h#> </h#>` tags
+#### Opening and closing `<h#> </h#>` tags
 
-### Numerical tag `1-6` is the header's size
+#### Numerical tag `1-6` is the header's size
 
 ```html
 <h1>Always be coding...</h1>
@@ -19,11 +19,11 @@
 <h6>Always be coding...</h6>
 ```
 
-## Header Semantics
+### Header Semantics
 
-### Do not skip a header size
+#### Do not skip a header size
 
-### Typically only have one `h1` on a page
+#### Typically only have one `h1` on a page
 
 ## Paragraph Elements
 

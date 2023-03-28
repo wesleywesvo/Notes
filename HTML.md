@@ -1,5 +1,11 @@
 # HTML
 
+## Header Semantics
+
+#### Do not skip a header size
+
+#### Typically only have one `h1` on a page
+
 ## Header Syntax
 
 #### Used to make your text stand out in a document ie: titles
@@ -18,12 +24,6 @@
 <h5>Always be coding...</h5>
 <h6>Always be coding...</h6>
 ```
-
-### Header Semantics
-
-#### Do not skip a header size
-
-#### Typically only have one `h1` on a page
 
 ## Paragraph Elements
 

@@ -58,3 +58,31 @@
 ##### \* Images `<img>`
 
 ##### \* Anchors (links) `<a>`
+
+# Attributes
+
+## Syntax/Notes
+
+### Appear inside opening tag of an element
+
+### Sits inside quotation marks (similar to a string)
+
+```HTML
+<tag attributeName= 'the value'> CONTENT </tag>
+```
+
+## Applying Attributes
+
+### Example with input types
+
+```HTML
+<input type='file'>
+<hr> <!-- hr (horizontal rule) adds a line break -->
+<input type='color'>
+<hr>
+<input type='checkbox'>
+<hr>
+<input type='radio'>
+<hr>
+<input type='date'>
+```

@@ -86,3 +86,34 @@
 <hr>
 <input type='date'>
 ```
+
+# HTML File Creation
+
+## <head> </head>
+
+### <script> </script> Runs the specified file within `script` tag
+
+#### \* type= file extension src= file name
+
+### <meta (content ex: name-'wesley')> provides information about web page without displaying it
+
+## <body> </body> Appears underneath the `head` tag
+
+```HTML
+<!DOCTYPE html>
+<html>
+    <head>  <!-- The 'head' is the name of the tab that will open in browser -->
+        <title> My First Page </title>
+
+        <meta name='wesley'>
+
+        <script type="text/javascript" src="example.js"></script>
+    </head>
+    <body>
+        <h1> Testing Title H1 Header </h1>
+    </body>
+
+
+</html>
+
+```

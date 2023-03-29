@@ -89,15 +89,15 @@
 
 # HTML File Creation
 
-## <head> </head>
+## `<head> </head>`
 
-### <script> </script> Runs the specified file within `script` tag
+### `<script> </script>` Runs the specified file within `script` tag
 
 #### \* type= file extension src= file name
 
-### <meta (content ex: name-'wesley')> provides information about web page without displaying it
+### `<meta (content ex: name-'wesley')>` provides information about web page without displaying it
 
-## <body> </body> Appears underneath the `head` tag
+## `<body> </body>` Appears underneath the `head` tag
 
 ```HTML
 <!DOCTYPE html>

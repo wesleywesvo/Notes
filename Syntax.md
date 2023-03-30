@@ -1,6 +1,6 @@
 # General Function Syntax
 
-### Traditional way
+## Traditional way
 
 ```javascript
 function myFunc (argument1, argument2, ...) {
@@ -9,7 +9,7 @@ function myFunc (argument1, argument2, ...) {
 }
 ```
 
-### Arrow Notation
+## Arrow Notation
 
 ```javascript
 const myFunc = (argument1, argument2, ...) => {
@@ -23,9 +23,9 @@ const myFunc = (argument1) => {
 }
 ```
 
-### Functions with Unknown Number of Arguments
+## Functions with Unknown Number of Arguments
 
-#### \* Method overloading (Java) does not exist in JS
+### \* Method overloading (Java) does not exist in JS
 
 ```javascript
 function myFunc(x, y) {
@@ -36,7 +36,7 @@ function myFunc(x, y) {
 }
 ```
 
-#### \* Parameters can be assigned a default value if no argument is passed
+### \* Parameters can be assigned a default value if no argument is passed
 
 ```javascript
 function myFunc(x, y = 10) {
@@ -86,4 +86,42 @@ function puppyFactory(name, breed) {
 }
 
 const zach = puppyFactory('zach, 'beagle');		//create a puppy object
+```
+
+# for..of vs for..in
+
+## for ... of loops
+
+### Executes a loop that operates on a sequence of values from an iterable object
+
+### Arrays, Strings, `arguments` object
+
+```javascript
+for (let variable of iterable) {
+	//statement
+}
+
+let arr = ['a', 'b', 'c'];
+for (let element of arr) {
+	console.log(element); //prints out each element of the array
+}
+```
+
+## for ... in loops
+
+### Executes a loop that iterates over all enumerable string properties of an object
+
+### Properties created by simple assignment or property initializer are enumerable by default
+
+### Enumerable properties can be visited by Object.keys()
+
+```javascript
+for (let property in object) {
+	//statement
+}
+
+let obj = { a: 1, b: 2, c: 3 };
+for (let prop in obj) {
+	console.log(prop); //prints out each property in form of a string
+}
 ```

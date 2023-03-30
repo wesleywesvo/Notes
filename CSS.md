@@ -27,4 +27,4 @@
 ```
 
 ![Image]
-((https://github.com/wesleywesvo/Notes/blob/main/Images/Grocery%20List%201.png))
+(https://github.com/wesleywesvo/Notes/blob/main/Images/Grocery%20List%201.png)

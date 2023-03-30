@@ -26,5 +26,4 @@
 </div>
 ```
 
-![Image]
-(https://github.com/wesleywesvo/Notes/blob/main/Images/Grocery%20List%201.png)
+![Image](https://github.com/wesleywesvo/Notes/blob/main/Images/Grocery%20List%201.png)

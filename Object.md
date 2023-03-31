@@ -157,3 +157,46 @@ for (var prop of Object.keys(obj)) {
 	console.log(prop);
 }
 ```
+
+## Inheritance via Object.create()
+
+### Parent object is `Animal` and the child object (inheritor) is `Dog`
+
+```javascript
+var Animal = function (name) {
+	this.name = name;
+};
+Animal.prototype.print = function () {
+	console.log(this.name);
+};
+
+var Dog = function () {
+	return Animal.call(this, 'Dog');
+};
+
+Dog.prototype = Object.create(Animal.prototype);
+```
+
+### Note: Below is an incorrect way of inheritance
+
+### This will cause every `Dog` object to inherit from ONE specific `Animal` instance
+
+### If `Animal` constructor expects an argument but `Dog` doesn't
+
+```javascript
+Dog.prototype = new Animal();
+
+Dog.prototype = new Animal('random string??'); //bad
+```
+
+### Note: Another incorrect way of inheritance
+
+### This will cause all `Animal` instances to have the same prototype method assigned to `Dog` since `Dog.prototype === Animal.prototype`
+
+```javascript
+Dog.prototype.bark = function () {
+	alert('bark');
+};
+
+Dog.prototype = Animal.prototype;
+```
